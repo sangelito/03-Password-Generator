@@ -12,6 +12,11 @@ var confrimSpeacial;
 
 var lowerCase = ("abcdefghijklmnopqrstuvwxyz")
 
+var blankUppper = []; 
+var toUpper = function (x) {
+  return x.toUpperCase(); 
+}; 
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
