@@ -12,17 +12,18 @@ var confirmSpecial;
 var confirmNumber;
 var userChoices; 
 
-var lowerCase = ("a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z")
+var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-var blankUpper = []; 
-var toUpper = function (x) {
-  return x.toUpperCase(); 
-}; 
+//var upperCase = []; 
+//var toUpper = function (x) {
+ // return x.toUpperCase(); 
+//}; 
 
 //upperCase = lowerCase.map(toUpper);
 
-var numbers = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-var special = ("!, @, $, $, %, ^, &, *, (, ), =, +, <, >, ?, ~,")
+var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var special = ["!", "@", "$", "%", "^", "&", "*", "(", ")", "=", "+", "<", ">", "?", "~"]
 
 // Write password to the #password input
 function writePassword() {
@@ -57,7 +58,7 @@ function generatePassword() {
     confirmSpecial = confirm("Will this contain special characters?");
     console.log("Special Character " + confirmSpecial);
   }
-};
+
 
 if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
   userChoices = alert("You must choose a criteria");
@@ -134,8 +135,18 @@ else if (confirmSpecial){
   console.log(userChoices);
 }
 
+var finalpass = [];
+
 for (var i=0; i < passwordLength; i++) {
   var allChoices = userChoices[Math.floor(Math.random() * userChoices.length)];
-    passwordBlank.push(allChoices);
-    console.log(allChoices);
+  console.log(allChoices) 
+
+  finalpass.push(allChoices)
+  console.log(finalpass)
+  
+}
+let mystring = finalpass.join("")
+  console.log(mystring)
+
+return mystring
 }
