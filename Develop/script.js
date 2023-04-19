@@ -10,6 +10,7 @@ var confirmLower;
 var confirmUpper; 
 var confrimSpeacial; 
 
+var lowerCase = ("abcdefghijklmnopqrstuvwxyz")
 
 // Write password to the #password input
 function writePassword() {
