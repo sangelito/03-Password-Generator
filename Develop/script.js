@@ -1,13 +1,17 @@
 // Assignment code here
-function CreatePassword (length = 8-32){
+function CreatePassword (length = 8){
   let password = '';
   const characters = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   let passwordLength = length; 
 
   const Array = new Uint32Array(length);
-  window.crypto.getRandomValues(array);
+  window.crypto.getRandomValues(Array);
+
+  console.log(Array)
 }
+
+CreatePassword()
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
