@@ -1,19 +1,5 @@
 // Assignment code here
-function CreatePassword (length = 8){
-  let password = '';
-  const characters = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-  let passwordLength = length; 
-
-  const Array = new Uint32Array(length);
-  window.crypto.getRandomValues(Array);
-
-  console.log(Array)
-
-  for (i=0; i<length; i++){
-    password += chars [Array[i]]
-  }
-}
 
 CreatePassword()
 
