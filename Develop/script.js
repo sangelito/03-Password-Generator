@@ -17,7 +17,7 @@ var toUpper = function (x) {
   return x.toUpperCase(); 
 }; 
 
-upperCase = lowerCase.map(toUpper)
+//upperCase = lowerCase.map(toUpper);
 
 var numbers = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 var speacial = ("!, @, $, $, %, ^, &, *, (, ), =, +, <, >, ?, ~,")
@@ -37,4 +37,12 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword(){
   paswrodLength = prompt("How many characters would you like in your password? Choose between 8 and 128"); 
   console.log("Password length" + passwordLength); 
-}
+
+}if(!passwordLength) {
+    alert("Required value");
+    
+  } else if (passwordLength < 8 || passwordLength > 128) {
+    passwordLength = prompt("You must choose between 8 and 128");
+    console.log("Password length " + passwordLength);
+
+};
