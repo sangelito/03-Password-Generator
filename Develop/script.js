@@ -57,7 +57,7 @@ function generatePassword() {
     confirmSpecial = confirm("Will this contain special characters?");
     console.log("Special Character " + confirmSpecial);
   }
-}
+};
 
 if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
   userChoices = alert("You must choose a criteria");
