@@ -88,3 +88,29 @@ else if (confirmUpper && confirmNumber && confirmSpecial){
     console.log(userChoices);
 }
 
+else if (confirmLower && confirmUpper){
+  userChoices = lowerCase.concat(upperCase);
+    console.log(userChoices);
+}
+
+else if (confirmLower && confirmNumber){
+  userChoices = lowerCase.concat(numbers);
+    console.log(userChoices);
+}
+
+else if (confirmLower && confirmSpecial) {
+  userChoices = lowerCase.concat(special);
+    console.log(userChoices);
+}
+else if (confirmUpper && confirmNumber){
+  userChoices = upperCase.concat(numbers);
+    console.log(userChoices);
+}
+else if (confirmUpper && confirmSpecial){
+  userChoices = upperCase.concat(special);
+    console.log(userChoices);
+}
+else if (confirmNumber && confirmSpecial){
+  userChoices = numbers.concat(special);
+    console.log(userChoices);
+}
