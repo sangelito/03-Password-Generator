@@ -1,9 +1,12 @@
 // Assignment code here
-function CreatePassword (length = 8){
+function CreatePassword (length = 8-32){
   let password = '';
   const characters = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   let passwordLength = length; 
+
+  const Array = new Uint32Array(length);
+  
 }
 
 // Get references to the #generate element
