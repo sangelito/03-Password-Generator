@@ -1,7 +1,8 @@
 // Assignment code here
 function CreatePassword ()
   let password = '';
-  
+  const characters = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
