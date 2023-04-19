@@ -1,10 +1,15 @@
 // Assignment code here
 
 
-CreatePassword()
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
+var passwordLength;
+var confirmLower; 
+var confirmUpper; 
+var confrimSpeacial; 
+
 
 // Write password to the #password input
 function writePassword() {
