@@ -8,11 +8,11 @@ var generateBtn = document.querySelector("#generate");
 var passwordLength;
 var confirmLower; 
 var confirmUpper; 
-var confrimSpeacial; 
+var confirmSpecial; 
 
 var lowerCase = ("abcdefghijklmnopqrstuvwxyz")
 
-var blankUppper = []; 
+var blankUpper = []; 
 var toUpper = function (x) {
   return x.toUpperCase(); 
 }; 
@@ -20,7 +20,7 @@ var toUpper = function (x) {
 //upperCase = lowerCase.map(toUpper);
 
 var numbers = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-var speacial = ("!, @, $, $, %, ^, &, *, (, ), =, +, <, >, ?, ~,")
+var special = ("!, @, $, $, %, ^, &, *, (, ), =, +, <, >, ?, ~,")
 
 // Write password to the #password input
 function writePassword() {
@@ -34,15 +34,12 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function generatePassword(){
-  paswrodLength = prompt("How many characters would you like in your password? Choose between 8 and 128"); 
+function generatePassword() {
+  passwordLength = prompt("How many characters would you like in your password? Choose between 8 and 128"); 
   console.log("Password length" + passwordLength); 
 
-}if(!passwordLength) {
-    alert("Required value");
-    
-  } else if (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("You must choose between 8 and 128");
-    console.log("Password length " + passwordLength);
+  if (!passwordLength){
+    alert("Required value"); 
+  }
+}
 
-};
