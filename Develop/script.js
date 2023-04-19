@@ -6,7 +6,7 @@ function CreatePassword (length = 8-32){
   let passwordLength = length; 
 
   const Array = new Uint32Array(length);
-  
+  window.crypto.getRandomValues(array);
 }
 
 // Get references to the #generate element
