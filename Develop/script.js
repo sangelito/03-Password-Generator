@@ -9,8 +9,10 @@ var passwordLength;
 var confirmLower; 
 var confirmUpper; 
 var confirmSpecial; 
+var confirmNumber;
+var userChoices; 
 
-var lowerCase = ("abcdefghijklmnopqrstuvwxyz")
+var lowerCase = ("a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z")
 
 var blankUpper = []; 
 var toUpper = function (x) {
@@ -57,3 +59,6 @@ function generatePassword() {
   }
 }
 
+if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
+  userChoices = alert("You must choose a criteria");
+} 
