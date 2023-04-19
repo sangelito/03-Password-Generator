@@ -9,6 +9,10 @@ function CreatePassword (length = 8){
   window.crypto.getRandomValues(Array);
 
   console.log(Array)
+
+  for (i=0; i<length; i++){
+    password += chars [Array[i]]
+  }
 }
 
 CreatePassword()
