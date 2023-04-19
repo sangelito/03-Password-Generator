@@ -133,3 +133,9 @@ else if (confirmSpecial){
   userChoices = special; 
   console.log(userChoices);
 }
+
+for (var i=0; i < passwordLength; i++) {
+  var allChoices = userChoices[Math.floor(Math.random() * userChoices.length)];
+    passwordBlank.push(allChoices);
+    console.log(allChoices);
+}
