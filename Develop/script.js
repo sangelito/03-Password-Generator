@@ -32,10 +32,13 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+//start function 
 function generatePassword() {
+  // request user input 
   passwordLength = prompt("How many characters would you like in your password? Choose between 8 and 128"); 
   console.log("Password length" + passwordLength); 
 
+  // if statements for possible password combinations 
   if (!passwordLength){
     alert("Required value"); 
   }
@@ -129,9 +132,10 @@ else if (confirmSpecial){
   userChoices = special; 
   console.log(userChoices);
 }
-
+// empty variable for password length 
 var finalpass = [];
 
+//Loop for random selection of password characters 
 for (var i=0; i < passwordLength; i++) {
   var allChoices = userChoices[Math.floor(Math.random() * userChoices.length)];
   console.log(allChoices) 
@@ -140,6 +144,7 @@ for (var i=0; i < passwordLength; i++) {
   console.log(finalpass)
   
 }
+// join (removes commas from array) and return the password (shows password int textbox)
 let mystring = finalpass.join("")
   console.log(mystring)
 
